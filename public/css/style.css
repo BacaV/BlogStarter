@@ -1,0 +1,63 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ececec;
+}
+
+.navLogo img{
+    width: 100px;
+    height: auto;
+}
+
+nav{
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: rgb(76, 163, 163);
+}
+
+.navList{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    margin: 0 40px;
+}
+
+li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    position: relative;
+}
+
+button{
+    border-radius: 2px;
+    background-color: lightblue;
+    padding: 3px 10px;
+    width: 100px;
+    border: 1px solid blue;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label{
+    font-weight: bold;
+}
+
+#title{
+    height: 20px;
+}

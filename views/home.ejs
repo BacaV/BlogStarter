@@ -1,0 +1,42 @@
+<%- include("partials/header") %>
+
+    <!-- Nemoj da si i jedan hint pogledao da te ne bih izjebao -->
+
+    
+
+    <div class="starsNav">
+        <img src="images/star.png" alt="1">
+        <img src="images/star.png" alt="2">
+        <img src="images/star.png" alt="3">
+        <img src="images/star.png" alt="4">
+        <img src="images/star.png" alt="5">
+        <img src="images/star.png" alt="6">
+        <img src="images/star.png" alt="7">
+        <img src="images/star.png" alt="8">
+        <img src="images/star.png" alt="9">
+        <img src="images/star.png" alt="10">
+        <img src="images/star.png" alt="11">
+        <img src="images/star.png" alt="12">
+        <img src="images/star.png" alt="13">
+        <img src="images/star.png" alt="14">
+        <img src="images/star.png" alt="15">
+        <img src="images/star.png" alt="16">
+        <img src="images/star.png" alt="17">
+        <img src="images/star.png" alt="18">
+        <img src="images/star.png" alt="19">
+        <img src="images/star.png" alt="20">
+        <img src="images/star.png" alt="21">
+    </div>
+    <div class="container">
+        <h1>Home</h1>
+        <p> <%= homeParagraph %> </p>
+        <% postLog.forEach(function(post){ %>
+            <h2> <%= post.postTitle %> </h2>
+            <p> <%= post.postContent.substring(0,100) + "..." %> </p>
+            <a href="post/<%=post.postURL%>">Read more.</a>
+            <% }) %>
+    </div>
+
+    
+
+<%- include("partials/footer") %>
